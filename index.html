@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827">
+<title>Rohit Blogger UP 35</title>
+<style>
+:root{--bg:#0b1020;--panel:#151d32;--text:#f7f8fc;--muted:#b8c1d9;--accent:#f59e0b;--line:#2a3550}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:linear-gradient(160deg,#111827,#090d18 65%);color:var(--text);line-height:1.5}
+.wrap{max-width:760px;margin:auto;padding:22px 16px 44px}.hero{text-align:center;padding:30px 18px 24px;border:1px solid var(--line);border-radius:24px;background:rgba(21,29,50,.92)}
+.avatar{width:88px;height:88px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;background:#f59e0b;color:#111827;font-weight:900;font-size:24px;border:4px solid #fff3}
+h1{font-size:clamp(27px,6vw,38px);line-height:1.15;margin:8px 0}p{color:var(--muted);margin:8px 0}.tag{display:inline-block;border:1px solid #47536d;border-radius:999px;padding:5px 12px;font-size:13px;color:#fde68a}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}.btn{display:block;text-decoration:none;text-align:center;font-weight:750;padding:14px 12px;border-radius:14px;background:#202b43;color:#fff;border:1px solid #34415d}.btn.primary{background:var(--accent);color:#111827;border-color:var(--accent)}.btn.whatsapp{background:#137a4b;border-color:#137a4b}
+.card{background:var(--panel);border:1px solid var(--line);padding:19px;border-radius:20px;margin-top:15px}h2{font-size:21px;margin:0 0 12px}label{display:block;font-size:14px;margin:12px 0 5px;color:#e5e7eb}input,select,textarea{width:100%;padding:12px 13px;border-radius:11px;border:1px solid #3b4761;background:#0e1526;color:#fff;font:inherit}textarea{min-height:88px;resize:vertical}.price{font-size:30px;font-weight:900;color:#fbbf24}.small{font-size:12px;color:#9caac5;margin-top:10px}.footer{text-align:center;color:#9caac5;font-size:12px;padding:22px 8px}
+@media(max-width:430px){.grid{grid-template-columns:1fr}.wrap{padding:14px 12px 30px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <div class="avatar" aria-label="Rohit Blogger initials">RB</div>
+    <span class="tag">OFFICIAL CREATOR PAGE</span>
+    <h1>Rohit Blogger UP 35</h1>
+    <p>गाँव, लोकल जगहों और शॉप प्रमोशन से जुड़ा कंटेंट।</p>
+    <p>अपने बिज़नेस का प्रमोशन करवाने के लिए नीचे बुकिंग फॉर्म भरें।</p>
+  </section>
+
+  <nav class="grid" aria-label="Social media links">
+    <a class="btn" href="https://www.instagram.com/rohit_blogar_up_35/" target="_blank" rel="noopener">📸 Instagram खोलें</a>
+    <a class="btn" href="https://www.youtube.com/@armyloverrohitrk8804" target="_blank" rel="noopener">▶️ YouTube चैनल</a>
+    <a class="btn whatsapp" href="https://wa.me/918081974212" target="_blank" rel="noopener">🟢 WhatsApp संपर्क</a>
+    <a class="btn" href="#booking">🏪 शॉप प्रमोशन बुक करें</a>
+  </nav>
+
+  <section class="card">
+    <h2>शॉप प्रमोशन ऑफर</h2>
+    <div class="price">₹299 <span style="font-size:14px;color:#cbd5e1;font-weight:500">/ शुरुआती ऑफर</span></div>
+    <p>अपनी दुकान की जानकारी भेजें। बुकिंग और तारीख की पुष्टि WhatsApp पर होगी।</p>
+  </section>
+
+  <section class="card" id="booking">
+    <h2>बुकिंग फॉर्म</h2>
+    <form id="bookingForm">
+      <label for="shop">दुकान / बिज़नेस का नाम *</label>
+      <input id="shop" name="shop" required placeholder="जैसे: शर्मा कपड़ा स्टोर">
+      <label for="person">आपका नाम *</label>
+      <input id="person" name="person" required placeholder="अपना नाम">
+      <label for="phone">आपका मोबाइल नंबर *</label>
+      <input id="phone" name="phone" required inputmode="tel" pattern="[0-9+\-\s]{10,15}" placeholder="मोबाइल नंबर">
+      <label for="type">किस चीज़ का प्रमोशन चाहिए?</label>
+      <select id="type" name="type"><option>दुकान / शोरूम</option><option>रेस्टोरेंट / खाने-पीने की जगह</option><option>प्रोडक्ट</option><option>अन्य</option></select>
+      <label for="details">पता और प्रमोशन की जानकारी</label>
+      <textarea id="details" name="details" placeholder="दुकान का पता, क्या प्रमोट करना है, पसंद की तारीख आदि"></textarea>
+      <button class="btn primary" type="submit" style="width:100%;margin-top:16px;cursor:pointer">WhatsApp पर बुकिंग भेजें</button>
+      <p class="small">यह शुरुआती डेमो है। बटन WhatsApp में आपके संदेश का ड्राफ्ट खोलेगा; बुकिंग अपने-आप सेव या भुगतान नहीं करती।</p>
+    </form>
+  </section>
+  <div class="footer">© Rohit Blogger UP 35 · Official App Prototype</div>
+</main>
+<script>
+document.getElementById('bookingForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const shop = document.getElementById('shop').value.trim();
+  const person = document.getElementById('person').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const type = document.getElementById('type').value;
+  const details = document.getElementById('details').value.trim();
+  const msg = `नमस्ते Rohit Blogger UP 35,%0Aमुझे शॉप प्रमोशन बुक करना है।%0Aदुकान: ${encodeURIComponent(shop)}%0Aनाम: ${encodeURIComponent(person)}%0Aमोबाइल: ${encodeURIComponent(phone)}%0Aप्रमोशन: ${encodeURIComponent(type)}%0Aजानकारी: ${encodeURIComponent(details)}%0Aऑफर कीमत: ₹299%0Aकृपया उपलब्ध तारीख और शर्तें बताएं।`;
+  window.open('https://wa.me/918081974212?text=' + msg, '_blank', 'noopener');
+});
+</script>
+</body>
+</html>
